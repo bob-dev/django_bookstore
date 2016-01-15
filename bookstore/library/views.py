@@ -5,5 +5,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    text = "First view"
-    return HttpResponse(text)
+
+    return render(request, 'library/index.html', {})
